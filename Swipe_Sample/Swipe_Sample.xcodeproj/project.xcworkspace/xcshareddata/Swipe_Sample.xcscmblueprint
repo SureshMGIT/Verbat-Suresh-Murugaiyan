@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "aba8651d-2ba7-16fd-ad9c-ce57b7db7bff",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "aba8651d-2ba7-16fd-ad9c-ce57b7db7bff" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "aba8651d-2ba7-16fd-ad9c-ce57b7db7bff" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DAF560C8-F3B0-44C9-804A-E55BBAF583E5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "aba8651d-2ba7-16fd-ad9c-ce57b7db7bff" : "SwipeSampl\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Swipe_Sample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "trunk\/Swipe_Sample\/Swipe_Sample.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SureshMGIT\/Verbat-Suresh-Murugaiyan.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "aba8651d-2ba7-16fd-ad9c-ce57b7db7bff"
+    }
+  ]
+}
