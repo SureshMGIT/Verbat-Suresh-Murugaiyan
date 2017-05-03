@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,8 +20,54 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cO2-uO-L5g">
+                                <rect key="frame" x="8" y="629" width="73" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Qve-z7-63q"/>
+                                    <constraint firstAttribute="width" constant="73" id="uM2-9l-IKd"/>
+                                </constraints>
+                                <state key="normal" title="Swipe Left"/>
+                                <connections>
+                                    <action selector="swipeLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XlV-oo-1Qf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVR-Td-m9V">
+                                <rect key="frame" x="164" y="629" width="47" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EGl-nM-q4Y"/>
+                                    <constraint firstAttribute="width" constant="47" id="P9o-XA-0zp"/>
+                                </constraints>
+                                <state key="normal" title="Reload"/>
+                                <connections>
+                                    <action selector="reloadSwipe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vcq-p9-A4x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Gy-9D-4Ky">
+                                <rect key="frame" x="285" y="629" width="82" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="Usr-Bn-bir"/>
+                                    <constraint firstAttribute="height" constant="30" id="gr1-Dh-FJy"/>
+                                </constraints>
+                                <state key="normal" title="Swipe Right"/>
+                                <connections>
+                                    <action selector="swipRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2DB-FW-FM1"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cO2-uO-L5g" secondAttribute="bottom" constant="8" id="20c-OL-CwU"/>
+                            <constraint firstAttribute="trailing" secondItem="0Gy-9D-4Ky" secondAttribute="trailing" constant="8" id="6JE-OO-iAI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0Gy-9D-4Ky" secondAttribute="bottom" constant="8" id="GDk-Ya-MLp"/>
+                            <constraint firstItem="cO2-uO-L5g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="Pjs-0Q-maN"/>
+                            <constraint firstItem="JVR-Td-m9V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SuP-WI-zbZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JVR-Td-m9V" secondAttribute="bottom" constant="8" id="qol-Dx-Z4z"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btn_swipeLeft" destination="cO2-uO-L5g" id="bEC-3J-AZU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

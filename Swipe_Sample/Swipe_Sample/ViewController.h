@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+- (IBAction)swipeLeft:(id)sender;
+- (IBAction)swipRight:(id)sender;
 
+- (IBAction)reloadSwipe:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *btn_swipeLeft;
 
 @end
 

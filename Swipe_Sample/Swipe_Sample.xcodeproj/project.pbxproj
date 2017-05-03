@@ -14,6 +14,9 @@
 		F99F1B061EB9C3CA007221C1 /* Swipe_Sample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F99F1B041EB9C3CA007221C1 /* Swipe_Sample.xcdatamodeld */; };
 		F99F1B081EB9C3CA007221C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F99F1B071EB9C3CA007221C1 /* Assets.xcassets */; };
 		F99F1B0B1EB9C3CA007221C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99F1B091EB9C3CA007221C1 /* LaunchScreen.storyboard */; };
+		F99F1B181EB9C518007221C1 /* DraggableViewBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = F99F1B121EB9C518007221C1 /* DraggableViewBackground.m */; };
+		F99F1B191EB9C518007221C1 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = F99F1B141EB9C518007221C1 /* OverlayView.m */; };
+		F99F1B1A1EB9C518007221C1 /* DraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F99F1B161EB9C518007221C1 /* DraggableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,12 @@
 		F99F1B071EB9C3CA007221C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F99F1B0A1EB9C3CA007221C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F99F1B0C1EB9C3CA007221C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F99F1B121EB9C518007221C1 /* DraggableViewBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableViewBackground.m; sourceTree = "<group>"; };
+		F99F1B131EB9C518007221C1 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		F99F1B141EB9C518007221C1 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
+		F99F1B151EB9C518007221C1 /* DraggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableView.h; sourceTree = "<group>"; };
+		F99F1B161EB9C518007221C1 /* DraggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableView.m; sourceTree = "<group>"; };
+		F99F1B171EB9C518007221C1 /* DraggableViewBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableViewBackground.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,12 @@
 		F99F1AF71EB9C3CA007221C1 /* Swipe_Sample */ = {
 			isa = PBXGroup;
 			children = (
+				F99F1B121EB9C518007221C1 /* DraggableViewBackground.m */,
+				F99F1B131EB9C518007221C1 /* OverlayView.h */,
+				F99F1B141EB9C518007221C1 /* OverlayView.m */,
+				F99F1B151EB9C518007221C1 /* DraggableView.h */,
+				F99F1B161EB9C518007221C1 /* DraggableView.m */,
+				F99F1B171EB9C518007221C1 /* DraggableViewBackground.h */,
 				F99F1AFB1EB9C3CA007221C1 /* AppDelegate.h */,
 				F99F1AFC1EB9C3CA007221C1 /* AppDelegate.m */,
 				F99F1AFE1EB9C3CA007221C1 /* ViewController.h */,
@@ -153,10 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F99F1B1A1EB9C518007221C1 /* DraggableView.m in Sources */,
 				F99F1B001EB9C3CA007221C1 /* ViewController.m in Sources */,
+				F99F1B191EB9C518007221C1 /* OverlayView.m in Sources */,
 				F99F1AFD1EB9C3CA007221C1 /* AppDelegate.m in Sources */,
 				F99F1B061EB9C3CA007221C1 /* Swipe_Sample.xcdatamodeld in Sources */,
 				F99F1AFA1EB9C3CA007221C1 /* main.m in Sources */,
+				F99F1B181EB9C518007221C1 /* DraggableViewBackground.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
